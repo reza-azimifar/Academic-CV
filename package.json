@@ -1,0 +1,16 @@
+{
+  "name": "academic-cv",
+  "version": "1.0.0",
+  "description": "A sample of online academic CV in English and Persian",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Reza Azimifar",
+  "license": "MIT",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1"
+  }
+}
