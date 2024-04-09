@@ -34,10 +34,14 @@
     margin: 0 5px;
 }
 
-.collapse {
+.rtl_wrapper #language {
+    cursor: pointer;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    font-family: "vazir";
+    font-size: 13px;
 }
 
 .bg-light {
@@ -45,6 +49,21 @@
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 
+.collapse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 1.3rem !important;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 1rem !important;
+    margin-top: 2rem;
+}
+
+/* --------- LTR styles --------- */
 /* Home page styles */
 .main_header {
     display: flex;
@@ -66,6 +85,10 @@
     border: 5px solid #fff;
 }
 
+.main_header_info img[src=""] {
+    display: none;
+}
+
 .main_header_info h1 {
     font-size: 1.8rem;
     margin-top: 1rem;
@@ -78,10 +101,28 @@
     margin-bottom: 1.5rem;
 }
 
+.main_header_content h6:last-of-type {
+    margin-top: 4rem;
+}
+
+.main_header_content p {
+    text-align: justify;
+    margin: 0 !important;
+}
+
+#home_list {
+    padding: 0;
+    padding-left: 1rem;
+}
+
 .main_header ul {
     padding: 0;
     padding-left: 1rem;
     margin-top: 1rem;
+}
+
+#home_list li {
+    margin-bottom: 0.4rem;
 }
 
 #home_links {
@@ -116,19 +157,11 @@
     border: none;
 }
 
-.main_header_content p {
-    text-align: justify;
-}
-
-.title {
-    font-size: 1.3rem !important;
-    font-weight: bold;
-    position: relative;
-    margin-bottom: 1rem !important;
-    margin-top: 2rem;
-}
-
 /* Publications page styles */
+#publications_content {
+    margin-top: 1rem;
+}
+
 .publication_container {
     margin-top: 3rem;
 }
@@ -208,6 +241,15 @@
 .publication_container .publications_footer a {
     color: blue;
     text-decoration: none;
+}
+
+.publication_container .publications_footer span:last-of-type {
+    margin-left: 0.5rem;
+    font-weight: 500;
+}
+
+.publication_container .publications_span {
+    min-width: 60px;
 }
   
 /* Research page styles */
@@ -349,3 +391,14 @@
     text-decoration: none;
     color: rgb(5, 5, 216);
 }
+
+
+/* --------- Rtl styles --------- */
+/* Home page styles */
+.rtl_wrapper > * {
+    direction: rtl;
+    font-family: "vazir";
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
