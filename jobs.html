@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./assets/images/icons/favicon.png"/>
+
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        <script src="./node_modules/jquery/dist/jquery.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="./node_modules/aos/dist/aos.js"></script>
+        
+        <script>
+            $(function () {
+              $("#include_navbar").load("./utils/navbar.html");
+            });
+        </script>
+
+        <title>Academic CV</title>
+    </head>
+
+    <body>
+        <div id="include_navbar"></div>
+        <div class="container pt-4" id="content_wrapper">
+            <h1 id="jobs_title" class="title">Jobs</h1>
+            <div id="jobs_data">
+                <div class="job_item">
+                    <div class="job_header">
+                        <div>
+                            <h1>Job title,</h1>
+                            <h2> Company name</h2>
+                        </div>
+                        <div>
+                            <span>20 April 2022 - Now</span>
+                            <span class="job_location">Amsterdam</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus.</p>
+                    <div class="job_achievements">
+                        <ul>
+                            <li>achievement 1</li>
+                            <li>achievement 2</li>
+                            <li>achievement 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job_item">
+                    <div class="job_header">
+                        <div>
+                            <h1>Job title,</h1>
+                            <h2> Company name</h2>
+                        </div>
+                        <div>
+                            <span>20 April 2020 - 20 April 2022</span>
+                            <span class="job_location">Amsterdam</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus.</p>
+                    <div class="job_achievements">
+                        <ul>
+                            <li>achievement 1</li>
+                            <li>achievement 2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
