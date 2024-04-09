@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./assets/images/icons/favicon.png"/>
+
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        <script src="./node_modules/jquery/dist/jquery.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="./node_modules/aos/dist/aos.js"></script>
+        
+        <script>
+            $(function () {
+              $("#include_navbar").load("./utils/navbar.html");
+            });
+        </script>
+
+        <title>Academic CV</title>
+    </head>
+
+    <body>
+        <div id="include_navbar"></div>
+        <div class="container pt-4" id="content_wrapper">
+            <h6 id="contact_title" class="title">Contact</h6>
+            <ul id="contact_data">
+                <li>
+                    <img src="./assets/images/icons/location.png" alt="your address">
+                    <p>Your Address</p>
+                </li>
+                <li>
+                    <img src="./assets/images/icons/phone.png" alt="your phone">
+                    <p>00989120000000</p>
+                </li>
+                <li>
+                    <img src="./assets/images/icons/mail.png" alt="your email">
+                    <p>example@email.com</p>
+                </li>
+                <li>
+                    <img src="./assets/images/icons/whatsapp.png" alt="your whatsapp">
+                    <a href="https://api.whatsapp.com/send?phone=your_number" target="_blank">
+                        WhatsApp Number
+                    </a>
+                </li>
+                <li>
+                    <img src="./assets/images/icons/google-scholar.png" alt="your google scholar">
+                    <a href="@googleScholar" target="_blank">
+                        Google Scholar Title 
+                    </a>
+                </li>
+                <li>
+                    <img src="./assets/images/icons/orcid.png" alt="your orcid id">
+                    <a href="https://orcid.com/your_username" target="_blank">
+                        Orcid Username 
+                    </a>
+                </li>
+                <li>
+                    <img src="./assets/images/icons/github.png" alt="your github account">
+                    <a href="https://github.com/your_username" target="_blank">
+                        Github Username 
+                    </a>
+                </li>
+                <li>
+                    <img src="./assets/images/icons/linkedin.png" alt="your linkedin account">
+                    <a href="https://www.linkedin.com/in/your_username/" target="_blank">
+                        Linkedin Username 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
