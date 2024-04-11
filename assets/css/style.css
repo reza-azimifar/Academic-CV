@@ -402,3 +402,31 @@
     line-height: 1.8;
 }
 
+.rtl_wrapper .main_header {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.rtl_wrapper h1 {
+    font-size: 1.4rem;
+}
+
+.rtl_wrapper h2 {
+    font-size: 1.1rem;
+}
+
+.rtl_wrapper h6 {
+    padding-bottom: 3px;
+}
+
+.main_header_content p {
+    margin-top: 0.7rem !important;
+    text-align: justify;
+}
+
+.rtl_wrapper ul {
+    padding: 0;
+    padding-right: 1rem;
+}
+
