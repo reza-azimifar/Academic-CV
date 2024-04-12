@@ -430,3 +430,46 @@
     padding-right: 1rem;
 }
 
+/* Publications page styles */
+.rtl_wrapper .publication_container .publications_header h2 {
+    display: inline;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: justify;
+    direction: rtl;
+}
+
+.rtl_wrapper .publication_container .publications_header span {
+    font-size: 0.89rem;
+}
+
+.rtl_wrapper .publication_container .publications_item {
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+    position: relative;
+}
+
+.rtl_wrapper .publication_container .publications_item::before {
+    right: -2rem;
+}
+
+.rtl_wrapper .publication_container .publications_footer span {
+    margin-left: 1rem;
+}
+
+.rtl_wrapper .publication_container .publications_footer li {
+    margin-right: 0;
+    margin-left: 2rem;
+    direction: rtl;
+    text-align: right;
+}
+
+.rtl_wrapper .publication_container .publications_footer li::before {
+    left: -1rem;
+    right: auto;
+}
+
+.rtl_wrapper .publication_container .publications_footer span:last-of-type {
+    margin-right: 0.5rem;
+}
+
