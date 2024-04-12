@@ -519,3 +519,108 @@
 .rtl_wrapper #contact_data a {
     direction: ltr;
 }
+
+
+@media (max-width: 980px) {
+    .collapse {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #language {
+        margin: 0.5rem 0;
+        margin-right: 1.1rem;
+        flex-direction: row !important;
+        width: 90px;
+        justify-content: flex-start !important;
+    }
+
+    .rtl_wrapper #language {
+        margin: 0.5rem 0;
+        margin-right: 0.8rem;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    /* Home Page Styles */
+    .main_header_info img {
+        width: 200px;
+        height: 200px;
+        margin-top: 1rem;
+    }
+
+    .main_header_info h1 {
+        margin-top: 1rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .main_header_info h2 {
+        margin-bottom: 0.8rem;
+    }
+
+    .main_header_content h6:last-of-type {
+        margin-top: 3rem;
+    }
+
+    #home_links {
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+
+    #home_links a {
+        width: 32px;
+        margin: 0 0.4rem;
+    }
+
+    #home_links img {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Publications Page Styles */
+    .publication_container .publications_item {
+        margin-left: 1rem;
+    }
+
+    .publication_container .publications_item::before {
+        left: -1rem;
+    }
+
+    /* Jobs Page Styles */
+    #jobs_data .job_item {
+        padding-left: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #jobs_data .job_item::before {
+        height: calc(100% + 2rem);
+    }
+
+    #jobs_data .job_header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #jobs_data .job_header div {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #jobs_data .job_header h1 {
+        font-size: 1.1rem;
+    }
+
+    #jobs_data .job_header h2 {
+        font-size: 1.1rem;
+        margin-left: 0.4rem;
+    }
+
+    /* Contact Page Styles */
+    #contact_data img {
+        width: 30px;
+    }
+}
