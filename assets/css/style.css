@@ -509,3 +509,14 @@
     padding: 0;
     padding-right: 1rem;
 }
+
+/* Contact Page Styles */
+.rtl_wrapper #contact_data img {
+    width: 30px;
+    margin-left: 1.5rem;
+    margin-right: 0;
+}
+
+.rtl_wrapper #contact_data a {
+    direction: ltr;
+}

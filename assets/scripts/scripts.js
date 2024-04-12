@@ -150,4 +150,80 @@ $(function(){
     if (pathname === "/jobs") {
         jobsData();
     }
+
+    // Contact Page Data
+    const contact_data = {
+        contact_title: lang === "en" ? "Contact" : "ارتباط با من",
+        contact_items: [
+            {
+            img: "../assets/images/icons/location.png",
+            title: lang === "en" ? globalData.enAddress : globalData.faAddress,
+            active: globalData.enAddress || globalData.faAddress ? true : false,
+            },
+            {
+            img: "../assets/images/icons/phone.png",
+            title: globalData.phone,
+            active: globalData.phone ? true : false,
+            },
+            {
+            img: "../assets/images/icons/mail.png",
+            title: globalData.email,
+            active: globalData.email ? true : false,
+            },
+            {
+            img: "../assets/images/icons/twitter.png",
+            url: globalData.twitter,
+            name: globalData.twitterTitle,
+            active: globalData.twitter ? true : false,
+            },
+            {
+            img: "../assets/images/icons/whatsapp.png",
+            url: globalData.whatsapp,
+            name: globalData.whatsappTitle,
+            active: globalData.whatsapp ? true : false,
+            },
+            {
+            img: "../assets/images/icons/google-scholar.png",
+            url: globalData.googleScholar,
+            name: globalData.googleScholarTitle,
+            active: globalData.googleScholar ? true : false,
+            },
+            {
+            img: "../assets/images/icons/orcid.png",
+            url: globalData.orcid,
+            name: globalData.orcidTitle,
+            active: globalData.orcid ? true : false,
+            },
+            {
+            img: "../assets/images/icons/github.png",
+            url: globalData.github,
+            name: globalData.githubTitle,
+            active: globalData.github ? true : false,
+            },
+            {
+            img: "../assets/images/icons/linkedin.png",
+            url: globalData.linkedin,
+            name: globalData.linkedinTitle,
+            active: globalData.linkedin ? true : false,
+            },
+        ],
+    };
+
+    function contactData() {
+        $("#page_title").html(contact_data.contact_title);
+        $("#contact_title").html(contact_data.contact_title);
+        $("#contact_data").html(contact_data.contact_items
+            .filter((item) => item.active)
+            .map((link) =>
+            `<li>
+                <img src=${link.img} alt=${link.title} /> 
+                ${link.url ? `<a href=${link.url} target='_blank'> ${link.name ? link.name : link.url}</a>` : `<p>${link.title}</p>`}
+            </li>`)
+            .join("")
+        );
+    }
+
+    if (pathname === "/contact") {
+        contactData();
+    }
 })
