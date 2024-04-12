@@ -21,7 +21,7 @@ $(function(){
         }
     }
 
-    // Home page data
+    // Home Page Data
     const home_data = {
         image: globalData.image,
         links: [
@@ -74,7 +74,7 @@ $(function(){
         homeData();
     }
 
-    // Publications page data
+    // Publications Page Data
     const setPublicationData = (id, data) => {
         $("#"+id).html(data.map((publication) => 
         `
@@ -109,5 +109,16 @@ $(function(){
 
     if (pathname === "/publications") {
         publicationsData();
+    }
+
+    // Research Page Data
+    function researchData() {
+        $("#page_title").text(lang === "en" ? "Research" : "تحقیقات");
+        $("#research_title").html(lang === "en" ? enResearchPageData.title : faResearchPageData.title);
+        $("#research_data").html(lang === "en" ? enResearchPageData.content : faResearchPageData.content);
+    }
+
+    if (pathname === "/research") {
+        researchData();
     }
 })
