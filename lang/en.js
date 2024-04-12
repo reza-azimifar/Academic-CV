@@ -129,3 +129,28 @@ const enResearchPageData = {
   </div>
   `,
 };
+
+// ---------- Jobs Page Data
+const enJobsPageData = {
+  title: "Jobs",
+  items: [
+    {
+      title: "Job Title",
+      company: "Company Name",
+      startData: "20 April 2022",
+      endDate: "",
+      location: "Tehran",
+      abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus.",
+      achievements: ["Achievement 1", "Achievement 2", "Achievement 3"],
+    },
+    {
+      title: "Job Title",
+      company: "Company Name",
+      startData: "20 April 2019",
+      endDate: "20 April 2022",
+      location: "Tehran",
+      abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus.",
+      achievements: ["Achievement 1", "Achievement 2"],
+    },
+  ],
+};

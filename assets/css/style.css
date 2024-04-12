@@ -18,7 +18,7 @@
     font-weight: 700;
 }
 
-/* Navbar styles */
+/* Navbar Styles */
 #language {
     cursor: pointer;
     display: flex;
@@ -63,8 +63,8 @@
     margin-top: 2rem;
 }
 
-/* --------- LTR styles --------- */
-/* Home page styles */
+/* --------- LTR Styles --------- */
+/* Home Page Styles */
 .main_header {
     display: flex;
     align-items: center;
@@ -157,7 +157,7 @@
     border: none;
 }
 
-/* Publications page styles */
+/* Publications Page Styles */
 #publications_content {
     margin-top: 1rem;
 }
@@ -252,7 +252,7 @@
     min-width: 60px;
 }
   
-/* Research page styles */
+/* Research Page Styles */
 #research_data p {
     margin: 1rem 0;
     text-align: justify;
@@ -272,7 +272,7 @@
     margin: 2rem auto;
 }
 
-/* Jobs page styles */
+/* Jobs Page Styles */
 #jobs_data {
     display: flex;
     flex-direction: column;
@@ -362,7 +362,7 @@
     padding-left: 1rem;
 }
 
-/* Contact page styles */
+/* Contact Page Styles */
 #contact_data {
     list-style: none;
     margin-top: 3rem;
@@ -393,8 +393,8 @@
 }
 
 
-/* --------- Rtl styles --------- */
-/* Home page styles */
+/* --------- RTL Styles --------- */
+/* Home Page Styles */
 .rtl_wrapper > * {
     direction: rtl;
     font-family: "vazir";
@@ -430,7 +430,7 @@
     padding-right: 1rem;
 }
 
-/* Publications page styles */
+/* Publications Page Styles */
 .rtl_wrapper .publication_container .publications_header h2 {
     display: inline;
     font-size: 1rem;
@@ -473,3 +473,39 @@
     margin-right: 0.5rem;
 }
 
+/* Jobs Page Styles */
+.rtl_wrapper #jobs_data .job_item {
+    padding-right: 2rem;
+}
+
+.rtl_wrapper #jobs_data .job_item::after {
+    right: 0px;
+}
+
+.rtl_wrapper #jobs_data .job_item::before {
+    right: 3px;
+}
+
+.rtl_wrapper #jobs_data h1 {
+    font-size: 1.1rem;
+}
+
+.rtl_wrapper #jobs_data h2 {
+    font-size: 0.95rem;
+    margin-right: 0.4rem;
+}
+
+.rtl_wrapper #jobs_data .job_header .job_location {
+    margin-right: 1rem;
+    margin-left: 0;
+    position: relative;
+}
+
+.rtl_wrapper #jobs_data .job_header .job_location::before {
+    right: -0.5rem;
+}
+
+.rtl_wrapper #jobs_data ul {
+    padding: 0;
+    padding-right: 1rem;
+}
