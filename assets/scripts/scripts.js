@@ -6,7 +6,6 @@ $(function(){
     if (!lang) {
         localStorage.setItem('lang', 'en');
     }
-
     if (lang === "fa") {
         $("#content_wrapper").addClass("rtl_wrapper");
         if ($("#languageIcon") && $("#languageText")){
@@ -77,8 +76,7 @@ $(function(){
     // Publications Page Data
     const setPublicationData = (id, data) => {
         $("#"+id).html(data.map((publication) => 
-        `
-        <div class='publications_item'>
+        `<div class='publications_item'>
             <div class='publications_header'>
                 ${publication.writers.length > 0 ? publication.writers.map((writer) => `<span>${writer}</span>`).join(", ") : ""}
                 ${publication.date ? `<span>(${publication.date}).</span>` : ""}
@@ -89,9 +87,7 @@ $(function(){
                 ${publication.link &&`<li><a href=${publication.link} target="_blank"> ${lang === "en" ? "View" : "مشاهده"}</a></li>`}
                 ${publication.github &&`<li><a href=${publication.github} target="_blank"> ${lang === "en" ? "Github" : "گیت‌هاب"}</a></li>`}
             </ul>
-        </div>
-        `
-        )
+        </div>`)
         .join(""));
     };
 
@@ -142,8 +138,8 @@ $(function(){
                 </div>
                 <p>${job.abstract}</p>
                 ${job.achievements.length > 0 ? `<div class="job_achievements"><ul>${job.achievements.map((achievement) => `<li>${achievement}</li>`).join("")}</ul></div>`: ""}
-            </div>`
-            ).join("")
+            </div>`)
+            .join("")
         );
     }
 
@@ -226,4 +222,4 @@ $(function(){
     if (pathname === "/contact") {
         contactData();
     }
-})
+});
