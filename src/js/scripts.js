@@ -9,13 +9,13 @@ $(function(){
     if (lang === "fa") {
         $("#content_wrapper").addClass("rtl_wrapper");
         if ($("#languageIcon") && $("#languageText")){
-            $("#languageIcon").attr("src", "../assets/images/icons/en.png");
+            $("#languageIcon").attr("src", "src/images/icons/en.png");
             $("#languageText").text("EN");
         }
     } else {
         $("#content_wrapper").addClass("ltr_wrapper");
         if ($("#languageIcon") && $("#languageText")){
-            $("#languageIcon").attr("src", "../assets/images/icons/ir.png");
+            $("#languageIcon").attr("src", "src/images/icons/ir.png");
             $("#languageText").text("FA");
         }
     }
@@ -27,34 +27,34 @@ $(function(){
             {
                 name: `mailto:${globalData.email}`,
                 active: globalData.email ? true : false,
-                img: "../assets/images/icons/mail.png"
+                img: "src/images/icons/mail.png"
             },
             {
                 name: globalData.whatsapp,
                 active: globalData.whatsapp ? true : false,
-                img: "../assets/images/icons/whatsapp.png"
+                img: "src/images/icons/whatsapp.png"
             },
             {
                 name: globalData.twitter,
                 active: globalData.twitter ? true : false,
-                img: "../assets/images/icons/twitter.png"
+                img: "src/images/icons/twitter.png"
             },
             {
                 name: globalData.linkedin,
                 active: globalData.linkedin ? true : false,
-                img: "../assets/images/icons/linkedin.png"
+                img: "src/images/icons/linkedin.png"
             },
             {
                 name: globalData.github,
                 active: globalData.github ? true : false,
                 url: "/",
-                img: "../assets/images/icons/github.png"
+                img: "src/images/icons/github.png"
             },
             {
                 name: globalData.resume,
                 active: globalData.resume ? true : false,
                 url: "/",
-                img: "../assets/images/icons/resume.png"
+                img: "src/images/icons/resume.png"
             }
         ]
     };
@@ -152,52 +152,52 @@ $(function(){
         contact_title: lang === "en" ? "Contact" : "ارتباط با من",
         contact_items: [
             {
-            img: "../assets/images/icons/location.png",
+            img: "src/images/icons/location.png",
             title: lang === "en" ? globalData.enAddress : globalData.faAddress,
             active: globalData.enAddress || globalData.faAddress ? true : false,
             },
             {
-            img: "../assets/images/icons/phone.png",
+            img: "src/images/icons/phone.png",
             title: globalData.phone,
             active: globalData.phone ? true : false,
             },
             {
-            img: "../assets/images/icons/mail.png",
+            img: "src/images/icons/mail.png",
             title: globalData.email,
             active: globalData.email ? true : false,
             },
             {
-            img: "../assets/images/icons/twitter.png",
+            img: "src/images/icons/twitter.png",
             url: globalData.twitter,
             name: globalData.twitterTitle,
             active: globalData.twitter ? true : false,
             },
             {
-            img: "../assets/images/icons/whatsapp.png",
+            img: "src/images/icons/whatsapp.png",
             url: globalData.whatsapp,
             name: globalData.whatsappTitle,
             active: globalData.whatsapp ? true : false,
             },
             {
-            img: "../assets/images/icons/google-scholar.png",
+            img: "src/images/icons/google-scholar.png",
             url: globalData.googleScholar,
             name: globalData.googleScholarTitle,
             active: globalData.googleScholar ? true : false,
             },
             {
-            img: "../assets/images/icons/orcid.png",
+            img: "src/images/icons/orcid.png",
             url: globalData.orcid,
             name: globalData.orcidTitle,
             active: globalData.orcid ? true : false,
             },
             {
-            img: "../assets/images/icons/github.png",
+            img: "src/images/icons/github.png",
             url: globalData.github,
             name: globalData.githubTitle,
             active: globalData.github ? true : false,
             },
             {
-            img: "../assets/images/icons/linkedin.png",
+            img: "src/images/icons/linkedin.png",
             url: globalData.linkedin,
             name: globalData.linkedinTitle,
             active: globalData.linkedin ? true : false,

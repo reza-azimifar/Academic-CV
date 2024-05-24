@@ -7,8 +7,8 @@ const navbarLinks = {
 };
 
 const globalData = {
-    image: "../files/profile.jpg",
-    resume: "../files/resume.pdf",
+    image: "src/images/profile.jpg",
+    resume: "src/files/resume.pdf",
     enAddress: "Your Address",
     faAddress: "آدرس شما",
     phone: "09120000000",

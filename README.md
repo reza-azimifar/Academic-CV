@@ -9,7 +9,7 @@ Fork [this repository](https://github.com/reza-azimifar/Academic-CV/), modify th
 ## Demo 
 Here you can check the [Demo](https://www.rezaexplains.com/) online:
 
-![Demo Image](./files/demo.jpg)
+![Demo Image](./src/images/demo.jpg)
 
 
 ## Getting started
